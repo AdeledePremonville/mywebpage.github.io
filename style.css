@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Mono:wght@200;400&display=swap');
+
+body {
+    padding: 0 2%;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    background-color:beige;
+}
+
+nav {
+    /* aligner les éléments */
+    display: flex;
+    /* passe l'élément en dessous quand ça ne rentre pas sur la page */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:burlywood;
+    align-items: center;
+    /*laisser la barre en haut de l'écran quand scroll*/
+    position: sticky;
+    top: 0;
+}
+
+nav .profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav .profile h1 {
+    margin-left: 20px;
+    font-size: 30px;;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+nav ul li {
+    margin: 1vw;
+    cursor: pointer;
+    border-bottom: 1px solid burlywood;
+}
+
+nav ul li:hover {
+    border-bottom-color:saddlebrown;
+}
+
+.page-content {
+    background-color:moccasin;
+}
+
+.page-content header {
+    margin-top: 5%;
+    max-width: 80%;
+}
+
+.page-content header h1 {
+    margin: 0;
+    font-family: 'Roboto mono';
+    font-size: 6vw;
+    color:saddlebrown
+}
+
+.page-content header p {
+    margin-left: 0;
+    font-size: 3vw;
+    color:peru;
+}
+
+.page-content header button {
+    background-color: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color:maroon;
+    padding: 0;
+    font-size: 20px;
+    padding: 1vw;
+    border:2px solid coral;
+    font-weight:bolder;
+}
+
+.page-content header button:hover {
+    color: salmon;
+    border: 2px solid brown;
+}
+
+footer {
+    margin-top: 5vw;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:darkgrey;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-size: 25px;
+    margin:0px auto 0px auto;
+}
+
+footer ul li {
+    margin: 3vw;
+    color: rgb(254, 254, 254);
+}
+
+footer ul a {
+    text-decoration: none;
+}
+
+footer ul li:hover {
+    cursor: pointer;
+    color:rgb(245, 176, 149);
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+    nav ul {
+        display: none;
+    }
+    .page-content header {
+        margin-top: 10%;
+        max-width: 100%;
+    }
+}
